@@ -1,27 +1,71 @@
+<h1 align="center">Nayan Kumar Gautam</h1>
+
 <p align="center">
-  <img src="./banner.png" alt="Nayan Kumar Gautam — Creating Greatness." width="100%">
+  <b>IOE BCT Student · Building Sensei BCT System · Video Creator</b><br>
+  <i>Creating Greatness.</i>
 </p>
+
 <p align="center">
-  <img src="./strip-about.png" alt="About Me" width="100%">
+  <a href="mailto:nepuni007@gmail.com"><img src="https://img.shields.io/badge/Email-nepuni007@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://github.com/nayansensei"><img src="https://img.shields.io/badge/GitHub-nayansensei-0d1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="https://www.tiktok.com/@senpaichacha"><img src="https://img.shields.io/badge/TikTok-@senpaichacha-0d1117?style=for-the-badge&logo=tiktok&logoColor=white" alt="TikTok"></a>
 </p>
-<p align="center">
-  <img src="./about-card.png" alt="First-year Computer Engineering (BCT) student from Kathmandu, Nepal. Beginner programmer learning C in GitHub Codespaces. Engineer by day, creator by night." width="100%">
-</p>
-<p align="center">
-  <img src="./strip-project.png" alt="Featured Project" width="100%">
-</p>
-<p align="center">
-  <img src="./project-card.png" alt="Sensei BCT System — a study platform for BCT students: every subject, chapter, notes, old questions and question bank in one place, everything opening inside the app." width="100%">
-</p>
-<p align="center">
-  <img src="./strip-toolbox.png" alt="My Toolbox" width="100%">
-</p>
-<p align="center">
-  <img src="./toolbox-card.png" alt="Toolbox: C, Git, GitHub, HTML, CSS, GitHub Codespaces, Ubuntu, Video Editing" width="100%">
-</p>
-<p align="center">
-  <img src="./footer.png" alt="Student by semester, builder by habit, creator by night." width="100%">
-</p>
-<p align="center">
-  <b>Creating Greatness.</b>
-</p>
+
+---
+
+## About Me
+
+I'm a first-year **Computer Engineering (BCT)** student at **Sagarmatha Engineering College, Tribhuvan University**, based in Kathmandu, Nepal.
+
+I learn by building. Right now I'm building the **Sensei BCT System** — a study platform that puts every BCT subject, chapter, notes and question bank in one place for students like me. I'm focused on strong fundamentals: C programming, how computers actually work, and writing code every week, not just watching tutorials.
+
+Outside the classroom, I'm a **video creator**. I edit anime and gaming content for an international audience, which taught me the other half of building things — packaging, storytelling, and making people care about what you made.
+
+I'm interested in tech communities, student events and volunteering, and I'm always up for collaborating on student projects.
+
+*Creating Greatness.* — that's the standard I work by.
+
+---
+
+## Featured Project
+
+### Sensei BCT System
+
+A study platform for BCT students — every subject, chapter, notes, old questions and question bank in **one place**, with everything opening inside the app.
+
+- Home → Semester → Subject → Chapter structure for the full BCT course
+- Notes, old questions and a question bank following the real IOE pattern
+- Everything opens inside the app — no scattered Drive folders, no redirect maze
+- Built because scattered folders and dead links waste study time
+
+---
+
+## Education
+
+**Sagarmatha Engineering College** — Tribhuvan University
+Bachelor in Computer Engineering (BCT)
+
+---
+
+## Skills & Tools
+
+`C` `Git` `GitHub` `HTML` `CSS` `GitHub Codespaces` `Ubuntu` `Video Editing` `Content Creation`
+
+---
+
+## Interests
+
+- Tech communities and student events
+- Volunteering at community tech events
+- Collaborating on student projects
+- Video editing and content creation for an international audience
+
+---
+
+## Contact
+
+- **Email:** [nepuni007@gmail.com](mailto:nepuni007@gmail.com)
+- **GitHub:** [github.com/nayansensei](https://github.com/nayansensei)
+- **LinkedIn:** Nayan Kumar Gautam
+- **TikTok:** [@senpaichacha](https://www.tiktok.com/@senpaichacha)
+- **Location:** Kathmandu, Nepal
