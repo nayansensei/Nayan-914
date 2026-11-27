@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Unit 4</Title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+          <div id="navbar-placeholder"></div>
+
+<script>
+    fetch('top.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+</script>
+<h1>Chapter 4: Application Software</h1>
+<main>
+    <div class="ms-word">
+        <h2>MS-Word (Word Processor)</h2>
+        <p><strong>Introduction:</strong> MS-Word is a text editing or word processing software developed by Microsoft Corporation, USA under MS-Office package. Word processing refers to the use of a computer to create, edit, and print documents. A word processor enables us to create a document, store it electronically in a disk, display it on a screen, modify it by entering commands and characters from the keyboard, and print it on a printer. MS-Word is a Windows-based application, it has many powerful and advanced features to manipulate the document. With the help of this program, we can create any types of documents like letters, reports, thesis, manuals, brochures, advertisements, and many other documents. Besides creating, editing, and modifying the documents, MS-Word provides some special facilities such as checking spelling and grammatical errors, searching for synonyms and antonyms, working with columns, tables, special symbols, pictures, graphs, charts, and many more. The documents created with MS-Word have the ".doc" extension. The newer versions of MS-Word have the newer extension ".docx".</p>
+
+        <h3>Features of MS-Word</h3>
+        <ul class="feature-list">
+            <li><strong>Fast operation:</strong> Since MS-Word is a digital text editing software, there is no mechanical movement associated. Hence, it is faster in operation.</li>
+            <li><strong>Editing text feature (Character formatting):</strong> Any type of operation like insert, delete, modify the documents and undo/redo, find/replace can be performed very easily. Similarly, we can customize our text document in any form or style like bold, italic, underline, different font size, different font color, different font style can be performed etc.</li>
+            <li><strong>Permanent storage:</strong> Using MS-Word, files and documents can be electronically stored on a disk or any other storage media. So, we can retrieve it whenever required.</li>
+            <li><strong>Graphics:</strong> MS-Word allows us to insert several objects like pictures and graphs anywhere in the document whenever required.</li>
+            <li><strong>OLE (Object Linking and Embedding):</strong> OLE is a technology that is used to share information between programs through objects. Objects are saved entities of different types like charts, equations, pictures, audio, and video files, etc.</li>
+            <li><strong>Mail merge:</strong> Mail merge is a useful tool that will allow us to easily produce multiple letters, labels, envelopes, and more using information stored in a list, database, or spreadsheet.</li>
+            <li><strong>Searching:</strong> MS-Word allows us to search any word or text and replace or delete it with other necessary ones throughout the entire document.</li>
+            <li><strong>Printing:</strong> MS-Word allows users to print the documents created by the user anytime, anywhere.</li>
+            <li><strong>Formatting a document:</strong> Word has various tools which help format a document. Formatting refers to the process of enhancing the appearance of the document to make it more readable and attractive. We can search and replace, display ruler, change a paragraph alignment, change line spacing, creating bullets and numbering to show your information in list. To further enhance the appearance of the text and documents. We can add border and shading even more we can add watermark to denote some confidential information in a document.</li>
+            <li><strong>Spelling and Grammar checker:</strong> MS-Word provides you with several features that will help you to produce a professional and error-free document. To make your document appear professional, you want to make sure it is free from spelling and grammar errors. Word also has the feature of checking grammatical and spelling errors and notifying users by different colored wavy lines either may be red or green.</li>
+            <li><strong>Use of thesaurus:</strong> MS-Word thesaurus makes it possible to look up synonyms and antonyms to words with a few clicks of the mouse. We can automatically replace a word by its respective antonyms or synonyms.</li>
+        </ul>
+    </div>
+
+    <div class="ms-excel">
+        <h2>MS-Excel (Spreadsheet)</h2>
+        <p><strong>Introduction:</strong> MS-Excel is a spreadsheet software in the Microsoft Office suite that allows users to store, organize, and analyze numerical and text data. It is a part of the MS-Office package. A spreadsheet program allows us to present information in a clear way. It can be used to perform mathematical calculations using several mathematical formulas and equations. Excel also allows us to convert spreadsheet data into various charts like bar-graphs, columns, and others. It can be used to calculate the data according to the needs of the user such as salary sheets, income and expenses statements, balance sheets, budget preparation, grade and percentage calculation, etc. Some application areas of Excel are:</p>
+        <ul>
+            <li>Basic mathematical calculation.</li>
+            <li>Financial modeling and analysis.</li>
+            <li>Statistical analysis</li>
+            <li>Scientific and engineering calculation.</li>
+            <li>Graphic presentation and more</li>
+        </ul>
+        <p>The extension of MS-Excel file is ".xlsx" and ".xls".</p>
+
+        <h3>Common terminologies used in spreadsheet</h3>
+        <ul>
+            <li><strong>Worksheet (Spreadsheet):</strong> Worksheet is the collection of rows and columns which are used to list, organize, and calculate data.</li>
+            <li><strong>Workbook:</strong> The files that are used in spreadsheets are collectively known as workbooks. Workbooks are made up of several numbers of worksheets. By default, one workbook has three worksheets.</li>
+            <li><strong>Cell:</strong> The intersection of rows and columns is called a cell. In order to refer to a cell, enter a column letter followed by a row number. For example, C2. The cell where the intersection point is called the active cell.</li>
+        </ul>
+
+        <h3>Features of MS-Excel</h3>
+        <ul class="feature-list">
+            <li>It facilitates us to work in multiple worksheets at a time.</li>
+            <li>It allows us to create different types of charts and graphs.</li>
+            <li>It allows us to organize and manage large volumes of data.</li>
+            <li>It allows us to perform any type of calculation automatically by using custom formulas and equations.</li>
+            <li>It allows us to easily sort the data in ascending and descending order.</li>
+            <li>It supports high-level features like object linking and embedding.</li>
+            <li>It allows us to format data to make it more attractive by using tools like font size, font color, etc.</li>
+            <li>Simple computing operations such as cut, copy, paste, find, replace can be easily done.</li>
+            <li>It includes internet features such as a web toolbar.</li>
+            <li>It allows us to store data electronically in any storage medium.</li>
+        </ul>
+
+        <h3>Cell reference in Excel (V.imp)</h3>
+        <p>A cell location in a spreadsheet is referred to as its cell reference. To find a cell reference, simply look at the column heading to find which column the cell is in and across to find which row it is in. The cell reference is a combination of column letter and row number such as A1, B3, Z9 … When writing cell reference the column letter should always come first. Specially cell reference is very important while writing formula or addressing the cell to evaluate the cell. For eg, if we want to add values 3 and 2 which are in A1 and A2 respectively, instead of writing A3=3+2 we write A3=A1+A2... There are two types of cell reference.</p>
+
+        <h4>Relative cell reference:</h4>
+        <p>In Excel, a relative cell reference identifies the location of the cell or group of cells. Cell references are used in formulas, functions, charts, and other Excel commands. By default, a spreadsheet cell reference is a relative cell reference. This means, the formula and functions can be copied and pasted to other cells. A relative cell consists of a column letter and row number and intersects at the cell location, An example of a relative cell reference would be A1, B4, G9 etc.</p>
+
+        <h4>Absolute cell reference:</h4>
+        <p>In Excel, an absolute cell reference identifies the location of a cell or group of cells which also contain a column letter and row number surrounded by a dollar sign($). An example of an absolute cell reference would be $A$2, $G$9, $Z$345 etc. An easy way to add a dollar sign is to click on the cell reference and then press the “F4” key from the keyboard. An absolute cell reference is used when you want a cell reference to stay fixed on a specific cell, which means formulas and functions can be copied and pasted to other cells the formula and function doesn't change.</p>
+    </div>
+
+    <div class="ms-powerpoint">
+        <h2>MS-PowerPoint (Presentation)</h2>
+        <p><strong>Introduction:</strong> PowerPoint is the presentation software in the Microsoft Office suite. With PowerPoint, we can create dynamic and professional presentations by using pre-defined layouts, themes, and templates. PowerPoint includes all the features we need to produce professional-looking presentations. A PowerPoint presentation consists of a series of slides which contain information that we want to communicate with our audience. This information can include text, images, graphs, charts, video, audio, and many more. Presentation programs can be used as a supplement to older visual aid technology such as pamphlets, handouts, posters, chalkboards, etc.</p>
+        <p>The extension of PowerPoint file is ".ppt", later versions use ".pptx". Similarly, MagicPoint, Apple Keynote, IBM Lotus, Harvard Graphics, etc. are the alternative software for Ms-PowerPoint.</p>
+
+        <h3>Features of MS-PowerPoint</h3>
+        <ul class="feature-list">
+            <li>Formatting of data helps to make documents much more attractive, effective, and interactive by using tools like font, font color, hyperlinks, etc.</li>
+            <li>Simple computing operations such as cut, copy, paste, find, and replace are supported.</li>
+            <li>It allows users to use pre-defined layouts, themes, and templates which help in the faster development and design of presentations.</li>
+            <li>Slide transition and effects can also be used for further requirement.</li>
+            <li>We can create our own custom animation.</li>
+            <li>It supports both internal and external hyperlinks.</li>
+            <li>Different bars, graphs, and charts can be used to convey detailed and precise information.</li>
+            <li>Internet features such as a web toolbar, online help, web linking can also be done.</li>
+        </ul>
+    </div>
+
+</main>
+
+</body>
+</html>

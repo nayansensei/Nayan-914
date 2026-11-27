@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Report</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        /* === Dark Anime-Themed CSS === */
+        :root {
+            --primary-color: #ff4444;
+            --secondary-color: #ff6666;
+            --dark-bg: #121212;
+            --card-bg: rgba(26, 26, 26, 0.9);
+            --text-color: #e0e0e0;
+            --text-light: #f8dada;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', 'Arial', sans-serif;
+            background-color: var(--dark-bg);
+            background-image: url('n.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-attachment: fixed;
+            color: var(--text-color);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            padding-top: 60px;
+            min-height: 100vh;
+        }
+
+        .newspaper {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: var(--card-bg);
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            color: var(--text-color);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: var(--primary-color);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1em;
+            color: var(--text-light);
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+        }
+
+        .half {
+            width: 48%;
+            margin-bottom: 20px; /* Add spacing between the sections */
+        }
+
+        .half h2 {
+            font-size: 1.3em;
+            margin-top: 0;
+            color: var(--secondary-color);
+        }
+
+        .half p {
+            font-size: 0.9em;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .dropcap {
+            float: left;
+            font-size: 2.5em;
+            line-height: 0.8;
+            padding-right: 8px;
+            padding-top: 4px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        img {
+            max-width: 100%; /* Make images responsive */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Additional Info Section */
+        .additional-info {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: rgba(40, 40, 40, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .additional-info h3 {
+            color: var(--secondary-color);
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .additional-info p {
+            font-size: 0.85em;
+            line-height: 1.5;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .half {
+                width: 100%; /* Make sections full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+        <div id="navbar-placeholder"></div>
+
+<script>
+    fetch('top.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+</script>
+    <div class="newspaper">
+        <header>
+            <h1>The Random News Daily</h1>
+            <p>Thursday, February 27, 2025</p>
+        </header>
+
+        <div class="content">
+            <div class="half">
+                <h2>Breaking News: Nepal, China sign deal to boost ethnic ties</h2>
+                <p><span class="dropcap">N</span>epal and China have signed a special agreement to strengthen cooperation on ethnic affairs.</p>
+                <p>Ram Bahadur Thapa Magar, chairman of Nepal’s Indigenous Nationalities Commission, and Fan Yu, China’s minister and chairman of the National Ethnic Affairs Commission, signed the memorandum of understanding amid a function in Kathmandu on Tuesday.</p>
+                <p>“The National Ethnic Affairs Commission of the People’s Republic of China and the Indigenous Nationalities Commission of Nepal (hereinafter referred to as the “parties”), with a view to serving the development of China-Nepal Strategic Partnership of Cooperation Featuring Ever-lasting Friendship for Development and Prosperity, promoting cooperation in the field of ethnic affairs between the parties, have reached the following understandings based on the principle of equality and reciprocity upon friendly consultation,” reads the MoU.</p>
+            </div>
+
+            <div class="half">
+                <img src="NC.jpg" alt="Nepal China sign deal">
+                <p>The MoU states that both parties agree to strengthen inter-departmental exchanges and cooperation based on respective national conditions and within the existing legal frameworks of the two countries. It also aims to deepen the exchange of experience in the governance of ethnic affairs, and enhance mutual understanding and friendly relations. The parties have agreed to support the implementation of various forms of exchanges and cooperation in the fields of education, academics, culture, art, and youth in ethnic affairs.</p>
+            </div>
+        </div>
+
+        <!-- Additional Information Section -->
+        <div class="additional-info">
+            <h3>Further Insights</h3>
+            <p>This agreement marks a significant step in fostering stronger relations between Nepal and China. It is expected to enhance cultural exchange, educational opportunities, and mutual understanding between the ethnic communities of both nations. Experts believe this partnership will contribute to regional stability and promote shared prosperity.</p>
+        </div>
+    </div>
+</body>
+</html>

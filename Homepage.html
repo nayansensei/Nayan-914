@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 11 Computer Science</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* === Dark Anime-Themed CSS === */
+        body {
+            font-family: 'Noto Sans JP', 'Arial', sans-serif;
+            background-color: #121212;
+            background-image: url('b.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #e0e0e0;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            transition: margin-left 0.4s ease-in-out;
+        }
+
+        /* Adjust container when units menu is open */
+        .units-active .container {
+            margin-left: 280px;
+        }
+
+        /* Top Navigation Bar - Anime Style */
+        .top-nav {
+            background: rgba(26, 26, 26, 0.9);
+            padding: 15px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            border-bottom: 1px solid #ff4444;
+            position: relative;
+            z-index: 100;
+        }
+
+        .top-nav .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .top-nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            text-shadow: 0 0 5px rgba(255, 68, 68, 0.3);
+            cursor: pointer;
+        }
+
+        .top-nav a i {
+            margin-right: 8px;
+            color: #ff4444;
+        }
+
+        .top-nav a:hover {
+            background-color: rgba(255, 68, 68, 0.2);
+            transform: translateY(-2px);
+            color: #fff;
+            text-shadow: 0 0 8px rgba(255, 68, 68, 0.5);
+        }
+
+        /* Units Sliding Menu */
+        .units-container {
+            position: fixed;
+            left: -300px;
+            top: 0;
+            height: 100vh;
+            width: 280px;
+            background-color: rgba(26, 26, 26, 0.95);
+            border-right: 2px solid #ff4444;
+            padding: 20px;
+            padding-top: 40px;
+            box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5);
+            overflow-y: auto;
+            transition: left 0.4s ease-in-out;
+            z-index: 99;
+        }
+
+        .units-container h2 {
+            color: #ff4444;
+            text-align: center;
+            margin-bottom: 15px;
+            padding-top: 20px;
+        }
+
+        .unit-card {
+            background-color: rgba(40, 40, 40, 0.8);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+            border-left: 4px solid #ff4444;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .unit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(255, 68, 68, 0.3);
+        }
+
+        .unit-card h3 {
+            color: #ff6666;
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+
+        .unit-card p {
+            font-size: 0.9em;
+            color: #d0d0d0;
+            margin-bottom: 15px;
+        }
+
+        .unit-card a {
+            display: inline-block;
+            background-color: #ff4444;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .unit-card a:hover {
+            background-color: #ff3333;
+        }
+
+        .welcome-section {
+            text-align: center;
+            padding: 80px 30px;
+            background: linear-gradient(135deg, #ff4444, #121212);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(255, 68, 68, 0.5);
+            margin: 40px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .welcome-section h1 {
+            color: #fff;
+            font-size: 3em;
+            text-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+            animation: pulse 1.5s infinite;
+            margin-top: 0;
+        }
+
+        .welcome-section p {
+            font-size: 1.5em;
+            color: #f8dada;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+            margin-bottom: 0;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Content sections styling */
+        .content-section {
+            background: rgba(26, 26, 26, 0.9);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .content-section h2 {
+            color: #ff4444;
+            border-bottom: 2px solid #ff4444;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .units-active .container {
+                margin-left: 0;
+            }
+            
+            .units-container {
+                width: 250px;
+            }
+            
+            .top-nav .container {
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: space-around;
+            }
+            
+            .top-nav a {
+                font-size: 0.9em;
+                padding: 6px 10px;
+            }
+            
+            .welcome-section h1 {
+                font-size: 2em;
+            }
+            
+            .welcome-section p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <div class="container">
+            <a id="notes-toggle"><i class="fas fa-book"></i> Notes</a>
+            <a href="C.html"><i class="fas fa-code"></i> C Codes</a>
+            <a href="CV.html"><i class="fas fa-file-alt"></i> CV</a>
+            <a href="News.html"><i class="fas fa-newspaper"></i> News Portal</a>
+            <a href="Blog.html"><i class="fas fa-blog"></i> Blog</a>
+        </div>
+    </div>
+
+    <!-- Units Sliding Menu -->
+    <div class="units-container" id="units">
+        <h2><i class="fas fa-layer-group"></i> All Units</h2>
+        <div class="unit-card"><h3><i class="fa fa-microchip"></i> Unit 1: Computer Systems</h3><p>Learn about computer hardware, software, and basic system architecture.</p><a href="unit 1.html">View Notes</a></div>
+        <div class="unit-card"><h3><i class="fa fa-calculator"></i> Unit 2: Number Systems</h3><p>Understand binary, octal, hexadecimal systems and Boolean logic.</p><a href="unit 2.html">View Notes</a></div>
+        <div class="unit-card"><h3><i class="fa fa-desktop"></i> Unit 3: OS & Software</h3><p>Explore operating systems, utility software, and application programs.</p><a href="unit 3.html">View Notes</a></div>
+        <div class="unit-card"><h3><i class="fa fa-file"></i> Unit 4: Application Packages</h3><p>Word processors, spreadsheets, and presentation software.</p><a href="unit 4.html">View Notes</a></div>
+        <div class="unit-card"><h3><i class="fa fa-code"></i> Unit 5: Programming in C</h3><p>Introduction to C programming language fundamentals.</p><a href="unit 5.html">View Notes</a></div>
+        <div class="unit-card"><h3><i class="fa fa-globe"></i> Unit 6: Web Technology</h3><p>HTML, CSS, and basic web development concepts.</p><a href="unit 6.html">View Notes</a></div>
+        <div class="unit-card"><h3><i class="fa fa-image"></i> Unit 7: Multimedia</h3><p>Graphics, audio, video, and animation technologies.</p><a href="unit 7.html">View Notes</a></div>
+        <div class="unit-card"><h3><i class="fa fa-lock"></i> Unit 8: Cyber Security</h3><p>Information security, cyber laws, and ethical practices.</p><a href="unit 8.html">View Notes</a></div>
+    </div>
+
+    <div class="container">
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <h1>🔥 WELCOME TO THE HOME PAGE 🔥</h1>
+            <p>🚀 Get ready to dive into the most exciting Computer Science journey! <br>
+            Here, you will find all works 💥</p>
+        </div>
+
+        <!-- Main Content Sections -->
+        <div class="content-section">
+            <h2><i class="fas fa-info-circle"></i> About This Course</h2>
+            <p>This Grade 11 Computer Science course covers fundamental concepts in computer systems, programming, web technologies, and cybersecurity. Explore each unit to access comprehensive notes and resources.</p>
+        </div>
+
+        <div class="content-section">
+            <h2><i class="fas fa-book-open"></i> Quick Access</h2>
+            <p>Use the navigation menu at the top to access different sections of the website, or click the "Notes" button to view all available course units in the sliding menu.</p>
+        </div>
+
+        <div class="content-section">
+            <h2><i class="fas fa-laptop-code"></i> Coding Resources</h2>
+            <p>Visit the "C Codes" section for programming examples and exercises in the C language. Perfect for practicing your coding skills!</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#notes-toggle').click(function() {
+                let menu = $('#units');
+                if (menu.css('left') === '-300px') {
+                    menu.css('left', '0');
+                    $('body').addClass('units-active');
+                } else {
+                    menu.css('left', '-300px');
+                    $('body').removeClass('units-active');
+                }
+            });
+            
+            // Close menu when clicking outside
+            $(document).click(function(e) {
+                if (!$(e.target).closest('#units, #notes-toggle').length) {
+                    $('#units').css('left', '-300px');
+                    $('body').removeClass('units-active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

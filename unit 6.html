@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Unit 6</Title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <div id="navbar-placeholder"></div>
+
+<script>
+    fetch('top.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+</script>
+    <h2>Chapter 6: Web Technology - I</h2>
+<main>
+    <h3>Introduction to the Internet</h3>
+    <p>Internet is the global network of networks. Or it is a huge collection of computers all over the world that is inter-connected to one another in various ways to form a web-net.</p>
+
+    <h3>Components Required for Internet Connections:</h3>
+    <p>The basic requirements for Internet are:</p>
+    <ol>
+        <li>A TCP/IP (Transmission Control Protocol/Internet Protocol) enabled computer with web browser.</li>
+        <li>An account with an ISP (Internet Service Provider)</li>
+        <li>A telephone line</li>
+        <li>A MODEM to connect to the telephone line and computer</li>
+        <li>A set of computer: The capacity of computer should be as follow:
+            <ul>
+                <li>Minimum 386 microprocessor chip with 16 MB RAM</li>
+                <li>Color monitor with 256 color support and 640x480m resolution</li>
+                <li>A hard disk of 200 MB free space</li>
+                <li>Multimedia sound card and speaker</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Internet Services and Applications</h3>
+    <ol>
+        <li><b>World Wide Web (WWW):</b> WWW is a series of services that are interconnected through hypertext. It provides links in the web document. It is the most important service provided by the Internet. It was created in 1990 at the European Particle Physics Laboratory in Geneva, Switzerland to exchange and share data through the Internet using the protocol known as Hypertext Transfer Protocol (HTTP).</li>
+        <li><b>Web Browser:</b> A web browser is a computer program that accesses web pages and displays them on the computer screen. Or web browser is client software that allows the users to display and interact with a web page. It is the basic software that is needed to find, retrieve (open), view, send and receive information over the Internet. Without these web browsers, we cannot open WWW. Internet Explorer, Safari, Mozilla Firefox, Opera, Depnet Explorer, Netscape Navigator, Mosaic, etc. are some popular web browsers.</li>
+        <li><b>FTP - File Transfer Protocol:</b> It is an Internet tool that permits an Internet user to move or transfer a file from one computer to another. The files may have data, graphics, text, etc.</li>
+        <li><b>Electronic Mail (E-mail):</b> Sending and receiving messages electronically through the Internet is called E-mail. It is the most widely used feature on the Internet. E-mail messages include a variety of digital text, graphics, video, animation, and audio data.</li>
+        <li><b>Voicemail:</b> Voicemail is a service offered by specialized computer hardware and software that answers telephone calls and records audio messages. We can talk to people using voicemail in an easy way.</li>
+        <li><b>USENET – View and News:</b> View and News or USENET is the BBS (Bulletin Board Service) of the Internet. The messages in this BBS are organized into thousands of News groups, which cover specific areas of the Internet.</li>
+        <li><b>Chat:</b> Chat is a special feature provided by the Internet to communicate with each other by typing in real-time. A user can log-on into any chatting room and can connect with any person who is online. It is a very easy way to exchange our ideas, feelings, and information with each other. The facility of offline messages is also provided here if your friend is not online.</li>
+        <li><b>IRC:</b> Internet Relay Chat (IRC) is a huge multi-user live chat facility. There are a number of major IRC servers around the world, which are linked to each other. Anyone can create a channel and all others in the channel see anything that anyone types in a given channel.</li>
+        <li><b>Video Conferencing:</b> It is known as web cam chatting these days. This Video Conferencing uses the same technology as IRC but also provides sound and video pictures. It enables direct face-to-face communication across networks. It also provides real-time visual communications (online chat).</li>
+        <li><b>Universal Resource Locator (URL):</b> URL is a unique address that identifies its location on the Internet. Web browsers utilize the URL to retrieve a file from the computer on which it resides. The format of the URL is given below:
+            <pre>
+                http                   -           protocol
+                www                 -           host computer name
+                animalplanet       -           domain name
+                com                  -           domain type
+            </pre>
+        </li>
+        <li><b>E-Fax (Electronic Fax):</b> It is another facility available on the Internet to send and receive faxes directly on our computer. It is very similar to E-mail. The E-Fax message first goes to the Internet server, then the Internet server sends it to its destination whereas E-mail message goes to the local file server.</li>
+        <li><b>TELNET – Remote Login:</b> Telnet allows users to log in to a host computer from a remote computer using a telnet program. In other words, it gives the user the opportunity to be on one computer system and work on another computer system, which may be across the street or thousands of miles away.</li>
+        <li><b>Navigators – Information Servers:</b> These are special features of the Internet to discover, locate, and retrieve information on various objects. Some of the well-known utilities are Gopher, Archie, Hytelnet, WAIS, and WWW. The WWW navigator is the most popular and has resulted in the massive growth of Internet resources.</li>
+    </ol>
+
+    <h3>Difference between E-mail and E-Fax</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>E-mail</th>
+                <th>E-Fax</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>It is very cheap.</td>
+                <td>It takes more cost than E-mail.</td>
+            </tr>
+            <tr>
+                <td>Message first goes to the local server.</td>
+                <td>Message first goes to the internet server and then to its destination.</td>
+            </tr>
+            <tr>
+                <td>Message is to be stored in the hard disk of the destination computer (server).</td>
+                <td>Message directly goes to print in the printer of the designation (destination) computer.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Internet Terminologies</h3>
+    <p>Some common terms related to Internet:</p>
+    <ul>
+        <li><b>ISP:</b> ISP (Internet Service Provider) is an institution that provides access to the Internet in some form, usually for money. Mercantile, Everest net, World link, etc. are some ISPs in Nepal.</li>
+        <li><b>Link:</b> Links are quick routes (ways) to jump to other web pages from your current page. This is one of the ways to navigate the Internet. Links are usually printed in a different color than the rest of the text around it.</li>
+        <li><b>Search Engine:</b> Search engines are the software that searches the web sites for you. Yahoo, Excite, Lycos, Alta Vista, etc. are some examples.</li>
+        <li><b>Domain Name and IP (Internet Protocol) Address:</b> The unique name that identifies an Internet site. Domain names always have 2 or more parts, separated by dots. The part on the left is the most specific, and the part on the right is the most general. IP (Internet Protocol) address is the corresponding number of the domain name, which creates the logical connections between different computers using different domain names and transfers data from one computer to another.</li>
+        <li><b>DNS Server:</b> DNS (Domain Name Services) Server is an Internet-wide structure with a unique alphanumeric name for computer hosts agents TCP/IP numeric host address. Eg. Internet.net</li>
+        <li><b>Web Server:</b> Web server is a site on which the WebPages are kept. It is a program that responds to requests from web browsers for relative resources.</li>
+        <li><b>Usernet Newsgroups or Net News:</b> These are special headlines through which you can search the related topics easily. Eg. You can type Sci for science, Rec for recreation, etc.</li>
+        <li><b>Mailing Lists:</b> Mailing lists are a special type of e-mail list, which are delivered via email to the individual mailboxes (email recipients) that subscribe to the list.</li>
+        <li><b>POP Server:</b> This is the server where your incoming mails are stored in your mailbox for you to collect it from. Post Office Protocol (POP) is designed to allow single-user hosts to read mail from a server. It means only that particular person can read that mail that knows the username and password to enter his site.</li>
+        <li><b>SMTP Server:</b> Simple Mail Transfer Protocol (SMTP) is used to transfer electronic mail between computers. It is a server-to-server protocol, so other protocols are used to access the messages. It accepts incoming mails from other Internet Hosts and drops incoming mail to your mailbox.</li>
+        <li><b>FTP (File Transfer Protocol):</b> FTP is one of the protocols. Protocols are a set of rules that the computers in the network must follow to communicate and to exchange data with each other. They are used to make logical connections between different computers and transfer data from one computer to another. TCP/IP, HTTP, SMTP, POP are also some protocols.</li>
+        <li><b>Anonymous FTP:</b> The word 'Anonymous' refers to the things, which are not made public or kept hidden or unknown. So, Anonymous FTP is a facility to retrieve (open and use) archived sites which contain software, documents of various sorts, files for configuring networks, graphic images, song, lyrics, etc.</li>
+        <li><b>HTTP (Hypertext Transfer Protocol):</b> This is one of the protocols that web browsers and web servers use to communicate with each other. When a web browser requests an HTML (Hypertext Markup Language) document from a web server, the connection is opened, the document is transferred and the connection is closed with HTTP protocol.</li>
+        <li><b>Proxy Server:</b> It is a server to improve the access speed of a particular pointed browser. It also updates and sometimes asks to update the information on your site itself.</li>
+        <li><b>Internet Roaming:</b> It is a facility that makes it possible to use our Internet Account provided by a local ISP, from any part (country) of the world while we are roaming (visiting). But our ISP should be a partner of a Global Roaming Community. And we should type the full email address.</li>
+    </ul>
+    <pre>
+        Here,     krishna -           It is user name.
+                    @         -           This symbol separates the user name and domain name.
+                    wlink     -           It is ISP name which provides internet access account.
+                    .com     -           It indicates the commercial organization or business.
+                    .np       -           It indicates the country code. Where .np for Nepal.
+    </pre>
+
+    <h2>Introduction to HTML</h2>
+    <p>HTML stands for Hyper Text Markup Language, which is used to create web pages that are used on the internet to exchange data and information. An HTML file itself is a text file which contains several tags and attributes. HTML was developed by Tim Berners-Lee and was based on SGML (Standard Generalized Markup Language). The tags and attributes used to create an HTML file are displayed using a web browser. A web browser helps to understand all the tags and attributes given by the user and generate the content of the page. The different versions of HTML are: HTML, HTML+, HTML 1.0, HTML2.0, HTML3.2, HTML 4.01 and now HTML 5.0.</p>
+
+    <h3>Use of HTML:</h3>
+    <ul>
+        <li>It is used to create a basic layout or design of a web page.</li>
+        <li>Without HTML, the World Wide Web wouldn't exist.</li>
+        <li>It allows features like embedding images, videos, audio, etc.</li>
+        <li>It allows the user to customize and format characters such as bold, italic, underline, etc.</li>
+        <li>It helps to create links and lists.</li>
+    </ul>
+
+    <h3>Advantages of HTML:</h3>
+    <ul>
+        <li>It is easy to use, flexible, and user-friendly.</li>
+        <li>It can be supported by all web browsers and operating systems such as Macintosh, Windows, Unix, etc.</li>
+        <li>It is easier to obtain and modify any of the content.</li>
+        <li>It is compatible with all search engines.</li>
+        <li>There are several new and advanced features in HTML 5.0.</li>
+        <li>HTML files take a short period of time to load.</li>
+        <li>Several tutorials can be easily accessed regarding HTML.</li>
+    </ul>
+
+    <h3>Disadvantages of HTML:</h3>
+    <ul>
+        <li>It is difficult to create attractive and interactive webpages only using HTML. [php, javascript, sql etc]</li>
+        <li>It cannot be used to create dynamic webpages.</li>
+        <li>It is only a scripting language and cannot be used as a programming language.</li>
+        <li>There are many incompatibilities of HTML.</li>
+        <li>There is no any complete acceptable standard of HTML.</li>
+    </ul>
+
+    <h3>Tags</h3>
+    <p>HTML tags are the instructions or commands given to the web browser in order to organize text images and any other components of web pages. These HTML tags are executed by the web browser respectively. Like any programming language, these HTML tags also help to perform some specific actions. HTML tags are written inside angular brackets &lt;&gt; . There are two types of HTML tags.</p>
+
+    <p class="important">Note: HTML tags and attributes are not case sensitive.</p>
+
+    <h4>Pair tag:</h4>
+    <p>Those tags which have both opening and closing tags are known as pair tags. They are also known as container tags. If a tag is written only within the angular brackets &lt;&gt; then it is known as an opening tag. Whereas, the same tag is written within an angular bracket preceded by a slash / then it is known as a closing tag.</p>
+
+    <h4>Singular tag:</h4>
+    <p>Those tags which have only an opening tag but no closing tag are known as singular tags. They are also known as empty tags.</p>
+
+    <h3>Attributes</h3>
+    <p>They are the descriptive properties of HTML tags written within the respective tag. Attributes help to add some extra features, which allow designers to customize and modify several components of webpages according to requirements.</p>
+
+    <p>Eg, If &lt;body&gt; is the tag then its attributes are:</p>
+    <ul>
+        <li>bgcolor = It helps to add a background color.</li>
+        <li>text = It helps to change the color of the text written in webpages.</li>
+        <li>background = It helps to add an image in the background of webpages.</li>
+    </ul>
+    <p>Which are written as:</p>
+    <pre>&lt;body bgcolor="red" text="white" background="image.jpg"&gt;</pre>
+
+    <h3>Steps to write and execute HTML document.</h3>
+    <ol>
+        <li>Write all the HTML tags, attributes, and related information in a notepad.</li>
+        <li>Save your document by using a desired name followed by the .HTML extension. Eg, sample.html</li>
+        <li>Execute the html file by using any web browser.</li>
+    </ol>
+
+    <h3>Some common terminologies of web designing.</h3>
+    <ul>
+        <li><b>Webpage:</b> It is generally an HTML document or written in any other scripting language that helps to execute information in the form of text, image, or any other component through the internet is called a webpage.</li>
+        <li><b>Website:</b> The collection of interrelated webpages is known as a website. It may contain any piece of information or may have information that is interrelated with several webpages that are connected through a hyperlink. All websites have two parts:
+            <ul>
+                <li>Domain name: The name used to access the website.</li>
+                <li>Web server: It is a storage location where every piece of information associated with the website is stored.</li>
+            </ul>
+        </li>
+        <li><b>Home page:</b> The introductory page which is executed first when we access the website.</li>
+        <li><b>Web browser:</b> It is an application program that helps to access any content of webpages that may be in any form using HTTP (Hyper Text Transfer Protocol). This protocol helps to make communication between web browsers and web servers. For eg, Google Chrome, Internet Explorer (Microsoft Edge), Safari, Mozilla Firefox, Netscape Navigator, etc.</li>
+        <li><b>URL:</b> It stands for Uniform Resource Locator. It is a standard way of referencing a protocol, host, and a directory. For eg https://readersnepal.com</li>
+    </ul>
+
+    <h2>DBMS (Database Management System)</h2>
+    <h3>Data:</h3>
+    <p>Data are the raw facts and figures. Data are isolated, uninterpreted and doesn't give any sense unless and until they are processed. Simply, they are the entities collected from the random world which undergo for processing. For eg, Ram,19,12,Pokhara</p>
+
+    <h3>Information:</h3>
+    <p>Information is the meaningful result which is obtained after processing and gives some meaning and sense. Generally, It is a processed version of data. For eg, Ram is a student whose age is 19, he lives in Pokhara-12.</p>
+
+    <p>As we know, information is obtained after processing data. Hence, we need data processing for converting data into information. Therefore, the systematic and scientific arrangement and organization of data so that we can retrieve it whenever required quickly and easily is called a database. A database is an organized collection of data for converting data and information so that it can give some meaningful results. For eg, Dictionary, Mark ledger, Census, Telephone directory etc.</p>
+
+    <p>Since manual collection and organization of data is time consuming, unsecured, and complex, there is an application program which helps to maintain a database i.e. a systematic and scientific organization and collection of data. so, we can retrieve any piece of information within a fraction of a time without any effort. Hence,</p>
+</main>
+</body>
+</html>

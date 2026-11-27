@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<head>
+    <title>C Programs Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	  <div id="navbar-placeholder"></div>
+
+<script>
+    fetch('top.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+</script>
+    <div class="container">
+        <h1>C Programs Collection</h1>
+        
+        <h2>1. Check if a Number is Prime</h2>
+        <div class="program">
+            <pre><code>#include&lt;stdio.h&gt;
+int main()
+{
+	int n, i, c=0;
+	printf("Enter the number: ");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		if(n%i==0)
+		{
+			c=c+1;
+		}
+	}
+		if (c==2)
+	{
+		printf("%d is a prime number",n);
+	}
+	else
+	{
+		printf("%d isn't a prime number",n);
+	}
+	return 0;
+}</code></pre>
+        </div>
+        
+        <div class="output-section">
+            <h3>Output for Prime Number Check</h3>
+            <img src="prime1.png" class="img" alt="Prime Number Output">
+            <img src="prime2.png" class="img" alt="Prime Number Output">
+        </div>
+
+        <h2>2. Calculate Factorial of a Number</h2>
+        <div class="program">
+            <pre><code>#include&lt;stdio.h&gt;
+int main()
+{
+    int n,i, f = 1;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    
+    for(i = 1; i <= n; i++) 
+	{
+        f = f* i;
+    }
+    printf("Factorial: %d", f);
+    return 0;
+}</code></pre>
+        </div>
+        
+        <div class="output-section">
+            <h3>Output for Factorial Calculation</h3>
+            <img src="fac.png" class="img" alt="Factorial Output">
+        </div>
+
+        <h2>3. Check if a Number is Palindrome</h2>
+        <div class="program">
+            <pre><code>#include&lt;stdio.h&gt;
+int main()
+{
+    int n, original, reverse = 0;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    original = n;
+    
+    while(n > 0) {
+        reverse = reverse * 10 + n % 10;
+        n /= 10;
+    }
+    
+    if(original == reverse)
+        printf("%d is palindrome", original);
+    else
+        printf("%d is not palindrome", original);
+    return 0;
+}</code></pre>
+        </div>
+        
+        <div class="output-section">
+            <h3>Output for Palindrome Check</h3>
+            <img src="pal1.png" class="img" alt="Palindrome Output">
+            <img src="pal2.png" class="img" alt="Palindrome Output">
+        </div>
+
+        <h2>4. Generate Fibonacci Series</h2>
+        <div class="program">
+            <pre><code>#include&lt;stdio.h&gt;
+int main()
+{
+    int n, a = 0, b = 1, c;
+    printf("Enter terms: ");
+    scanf("%d", &n);
+    
+    printf("Fibonacci: ");
+    for(int i = 1; i <= n; i++) {
+        printf("%d ", a);
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return 0;
+}</code></pre>
+        </div>
+        
+        <div class="output-section">
+            <h3>Output for Fibonacci Series</h3>
+            <img src="fib.png" class="img" alt="Fibonacci Output">
+        </div>
+
+        <h2>5. Check if a Number is Perfect</h2>
+        <div class="program">
+            <pre><code>#include&lt;stdio.h&gt;
+int main()
+{
+    int n, sum = 0;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    
+    for(int i = 1; i < n; i++) {
+        if(n % i == 0)
+            sum += i;
+    }
+    
+    if(sum == n)
+        printf("%d is perfect", n);
+    else
+        printf("%d is not perfect", n);
+    return 0;
+}</code></pre>
+        </div>
+        
+        <div class="output-section">
+            <h3>Output for Perfect Number Check</h3>
+            <img src="per1.png" class="img" alt="Perfect Number Output">
+            <img src="per2.png" class="img" alt="Perfect Number Output">
+        </div>
+
+        <h2>6. Sum of Both Diagonals in 3x3 Matrix</h2>
+        <div class="program">
+            <pre><code>#include &lt;stdio.h&gt;
+int main() {
+    int a[3][3], sum = 0, i, j;
+
+    printf("Enter 9 elements:\n");
+    for(i = 0; i < 3; i++) {
+        for(j = 0; j < 3; j++) {
+            printf("Enter element [%d][%d]: ", i, j);
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    for(i = 0; i < 3; i++) {
+        for(j = 0; j < 3; j++) {
+            if(i == j || i + j == 2) {
+                sum = sum + a[i][j];
+            }
+        }
+    }
+
+    printf("Sum of both diagonals: %d\n", sum);
+    return 0;
+}</code></pre>
+        </div>
+        
+        <div class="output-section">
+            <h3>Output for Diagonal Sum</h3>
+            <img src="ds.png" class="img" alt="Diagonal Sum Output">
+        </div>
+
+        <h2>7. Sum of Odd and Even Numbers in 3x3 Matrix</h2>
+        <div class="program">
+            <pre><code>#include &lt;stdio.h&gt;
+int main() {
+    int a[3][3], odd = 0, even = 0, i, j;
+
+    printf("Enter 9 elements:\n");
+    for(i = 0; i < 3; i++) {
+        for(j = 0; j < 3; j++) {
+            printf("Enter element [%d][%d]: ", i, j);
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    for(i = 0; i < 3; i++) {
+        for(j = 0; j < 3; j++) {
+            if(a[i][j] % 2 == 0) {
+                even = even + a[i][j];
+            } else {
+                odd = odd + a[i][j];
+            }
+        }
+    }
+
+    printf("Odd Sum: %d\n", odd);
+    printf("Even Sum: %d\n", even);
+    return 0;
+}</code></pre>
+        </div>
+        
+        <div class="output-section">
+            <h3>Output for Odd/Even Sum</h3>
+            <img src="oes.png" class="img" alt="Odd/Even Sum Output">
+        </div>
+
+        <h2>8. Display Lower Triangle of 3x3 Matrix</h2>
+        <div class="program">
+            <pre><code>#include &lt;stdio.h&gt;
+int main() {
+    int a[3][3], i, j;
+
+    printf("Enter 9 elements:\n");
+    for(i = 0; i < 3; i++) {
+        for(j = 0; j < 3; j++) {
+            printf("Enter element [%d][%d]: ", i, j);
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    printf("Lower Triangle Elements:\n");
+    for(i = 0; i < 3; i++) {
+        for(j = 0; j <= i; j++) {
+            printf("%d ", a[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}</code></pre>
+        </div>
+        
+        <div class="output-section">
+            <h3>Output for Lower Triangle</h3>
+            <img src="lt.png" class="img" alt="Lower Triangle Output">
+        </div>
+    </div>
+
+</body>
+</html>

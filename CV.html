@@ -1,0 +1,189 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        /* === Dark Anime-Themed CSS === */
+:root {
+    --primary-color: #ff4444;
+    --secondary-color: #ff6666;
+    --dark-bg: #121212;
+    --card-bg: rgba(26, 26, 26, 0.9);
+    --text-color: #e0e0e0;
+}
+
+body {
+    font-family: 'Noto Sans JP', 'Arial', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('rb.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    padding-top: 60px; /* Prevents navbar overlap */
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background: var(--card-bg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+}
+
+.info {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+h1 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+/* Sections */
+.section {
+    margin-top: 25px;
+    padding: 20px;
+    background: rgba(40, 40, 40, 0.8);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 8px;
+    color: var(--secondary-color);
+}
+
+/* Lists & Tables */
+ul {
+    padding-left: 25px;
+    list-style-type: square;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+      <div id="navbar-placeholder"></div>
+
+<script>
+    fetch('top.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+</script>
+    <div class="container">
+        <div class="header">
+            <img src="Photo.jpg" alt="Profile Picture" class="pic">
+            <div class="info">
+                <h1>Nayan Kumar Gautam</h1>
+                <p>Email: 024neb914@sxc.edu.np</p>
+                <p>Mobile: +977-9769029037</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Passionate tech enthusiast with expertise in AI, web development, and programming.</p>
+        </div>
+        <div class="section">
+            <h2>Educational Background</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Institution</th>
+                        <th>Grade Achieved</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bachelor of Technology in Artificial Intelligence (BTech in AI)</td>
+                        <td>Kathmandu University (KU)</td>
+                        <td>First Division</td>
+                    </tr>
+                    <tr>
+                        <td>SLC (Secondary Level Certificate)</td>
+                        <td>St. Xavier's College (SXC)</td>
+                        <td>Distinction</td>
+                    </tr>
+                    <tr>
+                        <td>SEE (Secondary Education Examination)</td>
+                        <td>Gyanodaya Secondary School (GSS)</td>
+                        <td>Distinction</td>
+                    </tr>
+                    <tr>
+                        <td>BLE (Basic Level Examination)</td>
+                        <td>Laboratory Secondary School (LSS)</td>
+                        <td>Distinction</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section">
+            <h2>Career Objective</h2>
+            <p>Seeking a challenging role in technology to apply my skills and contribute to innovative projects.</p>
+        </div>
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> C, C++, Java, Python, .NET, AI, Machine Learning</li>
+                <li><strong>Operating Systems:</strong> Windows, Linux</li>
+                <li><strong>Software:</strong> MS Office, Adobe Creative Cloud, Blender, DaVinci Resolve, IBM Watson, Microsoft Azure Machine Learning</li>
+                <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, ASP.NET</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Developing AI-based applications</li>
+                <li>Video editing & creative design</li>
+                <li>Gaming & esports</li>
+                <li>Problem-solving & coding challenges</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

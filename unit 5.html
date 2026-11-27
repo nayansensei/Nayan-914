@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title>Unit 5</Title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+          <div id="navbar-placeholder"></div>
+
+<script>
+    fetch('top.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+</script>
+    <h1>Chapter 5: Programming Concepts and Logics</h1>
+<main>
+    <h2>Introduction</h2>
+    <p>As we know every computerized device does not work by itself. They needed to be given some sort of command that makes computer work. These commands helps to instruct computer and program specific action required by the user. Since the command are given in the form of computer language, we need programming language are used to write the set of instruction which commands the computer to perform certain action collectively called programs. These programs are again integrated in order to make a complete software. Simply software is the collection of different interrelated program which performs specific function.</p>
+
+    <p>Program Written in any type of programming language are not understood by the computer hence we need some sort of language translator or processor such as assembler, complier and interpreter which has the basic function of converting program written in any type of language into machine level language.</p>
+
+    <p>The program written by the programmer is known as source program. After converting it becomes program.</p>
+
+    <h2>Qualities of Good Programs</h2>
+    <ul>
+        <li>It should be easily understood.</li>
+        <li>A program should be correct; it should be error free.</li>
+        <li>It should be reliable.</li>
+        <li>It should have easily understandable user interface.</li>
+        <li>It should be portable and flexible.</li>
+    </ul>
+
+    <h2>Programming Language</h2>
+    <p>In order to make communication between user and computer, we need a computer language that helps user to generate commands to perform as per the requirement. This language with which we can give instruction to the computer is known as programming language. Programming language are the set of different keywords, variables, operators, loops, and other entities using different character sets including numbers, special symbol and alphanumeric values.</p>
+
+    <p>Hence, the process of writing the programming language is known as programming and the person who writes program is programmers.</p>
+
+    <h2>Types of Programming Language</h2>
+    <p>There are several types of programming language which can be categorized as follows:</p>
+
+    <h3>Low Level Language</h3>
+    <p>Low level language are the machine dependent language which means program written for one type of system cannot be run in another system. Developer should have detail analysis and knowledge about the system for which s/he is going to write a program for. Hence, programming in low level language is very much difficult and time consuming. Different types of programming language are:</p>
+
+    <h4>Machine Level Language (1GL)</h4>
+    <p>This language consists a sequence of 0's and 1's to generate instruction. Since, it uses binary numbers, this type of language is directly understood by processor. So, it has higher execution speed. It is also a machine dependent language in which programmers should have detailed knowledge of the system.</p>
+
+    <p class="advantage">Advantage:</p>
+    <ul>
+        <li>It is directly understood by the processor so execution speed is relatively high.</li>
+        <li>Language translator or processor is not needed.</li>
+        <li>They can be used to program specific purpose computer.</li>
+    </ul>
+
+    <p class="disadvantage">Disadvantage:</p>
+    <ul>
+        <li>It is difficult and time consuming to develop and debug program.</li>
+        <li>It is machine dependent language. So, program developed for one system cannot be operated in another system.</li>
+        <li>All the syntax and commands are in the form of binary numbers which is difficult to remember.</li>
+        <li>Programmers should have detail knowledge about particular system and its architecture.</li>
+    </ul>
+
+    <h4>Assembly Language (2GL)</h4>
+    <p>Assembly language are also an example of low-level language. In this language, instead of writing instruction in the series of 0's and 1's we can use mnemonics (symbolic instructions) like ADD, SUB, RST, DIV, MOD and so on. Since it is closer to machine level language, a programmer should have detailed knowledge about computer internal architecture. This language is faster in comparison to high level language. Since, this language is not directly understood by the computer, we need language translator like assembler to convert it into machine level language.</p>
+
+    <p class="advantage">Advantage:</p>
+    <ul>
+        <li>It is easier to write, debug and understand programming written in assembly level language compared to machine level language.</li>
+        <li>Program execution is higher compared to high level language.</li>
+        <li>Since they are machine dependent, they are used to develop different device drivers.</li>
+    </ul>
+
+    <p class="disadvantage">Disadvantage:</p>
+    <ul>
+        <li>It is machine dependent language, i.e. program made for one processor doesn't run in another processor.</li>
+        <li>Use of mnemonics code makes assembly language much more complex.</li>
+        <li>Program development and debugging is more difficult and time consuming compared to high level language.</li>
+    </ul>
+
+    <h3>High Level Language</h3>
+    <p>This language is close to English language. High level language code is written in English like structure using mathematical notation. Since it is similar to English language, it is easier to develop and debug the program. It is machine independent language (i.e. program developed for one processor can work on another processor). Since HLL (high level language) are not directly understood by the computers, we need language processor or translator such as complier and interpreter for converting program written in high level language to machine level language. FORTAN (Formula Translator) introduced on 1956 A.D is the first high level language. Nowadays there are many high-level languages like C, C++, python, JavaScript, etc.</p>
+
+    <p class="advantage">Advantage:</p>
+    <ul>
+        <li>Since it is closer to English language, program written in this language is easier to write, debug and understand.</li>
+        <li>Since it is machine independent, program written for one processor can work in another processor.</li>
+        <li>Programmer doesn't have to remember large number of mnemonics and other unusual codes.</li>
+        <li>Program development is faster and requires less effort than other language.</li>
+    </ul>
+
+    <p class="disadvantage">Disadvantage:</p>
+    <ul>
+        <li>Computer doesn't understand high level language directly. So the program needs conversion before execution.</li>
+        <li>Program execution is slower compared to low level language.</li>
+    </ul>
+
+    <h4>Procedural Oriented Language (3GL)</h4>
+    <p>This type of language is high level language which primarily focuses on procedure rather than on data. Hence, they are used to express the logic and the procedure of the program. Since it focuses only on procedure, it is complex and time consuming to write a large program. This type of language follows top to bottom approach i.e. main function is written at the bottom of the program. This type of language doesn't pose important and powerful feature like data encapsulation, data inheritance, data extraction and so on. So, this type of language has less security compared to object-oriented language. Because of their flexibility, procedure language is able to solve verities of problem. Examples: C, FORTAN, QBasic, etc.</p>
+
+    <p class="advantage">Advantage:</p>
+    <ul>
+        <li>Program development and debugging is easier compared to low level language.</li>
+        <li>More advance and user-friendly software can be developed.</li>
+        <li>It is also a machine independent language.</li>
+        <li>It is used as general purpose programming.</li>
+    </ul>
+
+    <p class="disadvantage">Disadvantage:</p>
+    <ul>
+        <li>Language translator or processor is required to execute the program.</li>
+        <li>Program execution is slower.</li>
+        <li>Data security is less in comparison to other high-level language.</li>
+    </ul>
+
+    <h4>Problem/Object Oriented Language (4GL)</h4>
+    <p>This is the advance form of high-level language which primarily focuses on data rather than procedure. It allows the user to specify what the output should be without describing all the detail (i.e. procedure) of how the data should be manipulated. This type of language follows bottom up approach. That means all main function are written at the bottom of the program whereas classes and object are described at top of the program. Since it has several powerful features such as data encapsulation, data extraction and inheritance, the data are more secure compared to procedure language. Examples: C#, C++, Java, etc.</p>
+
+    <p class="advantage">Advantage:</p>
+    <ul>
+        <li>Web based application and software can be developed.</li>
+        <li>More advance and user-friendly software can be developed.</li>
+        <li>It is also machine independent language.</li>
+    </ul>
+
+    <p class="disadvantage">Disadvantage:</p>
+    <ul>
+        <li>Language translator is required to execute the program.</li>
+        <li>Program execution is slower.</li>
+        <li>It is difficult to develop hardware-oriented language.</li>
+    </ul>
+
+    <h4>Natural Language (5GL)</h4>
+    <p>Natural language uses simple statement of common communication language where we could write statements that would look like normal sentences. It is still in developing stage; computer scientists are working hard for developing such language. However, programming language like PROLOG (programming logic) is currently in use. For example: - instead of writing some unusual code, programmers would write: "who are the salesmen who has sold more than 30,000 products last month?"</p>
+
+    <p class="advantage">Advantage:</p>
+    <ul>
+        <li>It will be even easier to develop and debug the program.</li>
+        <li>It will also be machine independent language.</li>
+        <li>More advance and user-friendly program will be made.</li>
+    </ul>
+
+    <p class="disadvantage">Disadvantage:</p>
+    <ul>
+        <li>Language translator is required to execute the program.</li>
+        <li>Program execution is slower</li>
+        <li>It is difficult to develop hardware-oriented language.</li>
+    </ul>
+
+    <h2>Language Translator/Processor</h2>
+    <p>Language translator is that system development software which helps to convert program written in assembly or high-level language (source program) into machine level language (object program). Since it is difficult and incontinent to write a program in machine level language, language developer uses several assemblies and high level language which are not directly understood by the computer. Hence, we use different types of language processor to convert and make machine understandable. There are different types of language translators.</p>
+
+    <h3>Assembler</h3>
+    <p>These language translator/processor converts program written in assembly level language (source program) into machine understandable language (object language) Since assembly level language are closer to machine level language, the conversion taken by assembler is relatively less. It converts program at once into machine level language.</p>
+
+    <h3>Compiler</h3>
+    <p>Those language processors which helps to convert program written in high level language (source program) into machine level program (object program). It converts whole program into machine level language at once. It is the largest method of translating a program in which debugging is complex and time consuming. Programming languages like C, C++, Java, etc. use complier</p>
+
+    <h3>Interpreter</h3>
+    <p>This is the type of language which converts program written in high level language (source program) into machine level language (object program). It converts one statement at a time so its debugging can be easier and less time consuming. Its program execution is slower than that of compiler. Most of the new programming language use interpreter which allocate less memory space. Programs like BASIC, C#, Php, etc. use interpreter for conversion.</p>
+
+    <h3>Difference Between Compiler and Interpreter</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>S.N.</th>
+                <th>Compiler</th>
+                <th>Interpreter</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>It translates the whole program into object code at a time.</td>
+                <td>It translates one line or a single statement of a program into object code at a time.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>It finds out the error after compiling the complete program.</td>
+                <td>It finds out the error after translating a line of the program at a time.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>The translating process is incredibly faster.</td>
+                <td>The translating process is slower.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Compiler based program is difficult to code and debug.</td>
+                <td>Interpreter based program is easy to code and debug.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>It is usually a large program and requires larger memory space.</td>
+                <td>It is usually a smaller program and requires less memory space.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>New programming language don't use complier.</td>
+                <td>New programming language use interpreter.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>For e.g.: C, C++, java, FORTAN etc.</td>
+                <td>For e.g.: BASIC. C#, PHP etc.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Syntax and Semantics</h2>
+    <p>As we know programming language helps the user to communicate with the computer. User is governing by several set of codes which instruct computer to perform some specific task. This set of codes and its structure is known as syntax. In addition, semantics is the meaning attached to individual word or symbol in programming language. For example:</p>
+
+    <p>In q basic:</p>
+    <p>Print" This is programming"; P</p>
+
+    <p>Here, Print is Semantics and whole line is Structure (syntax)</p>
+
+    <h2>Error (BUG)</h2>
+    <p>There may be several errors inside a program which stops program from being executed. Thus, an error in a program is known as a bug. This type of error in a program may arise by not following proper rules given by the programming language due to poor problem analysis or maybe due to hardware failure. Error in the program may five ambiguous (not accepted/false) result. The process of removing error from a computer program is known as debugging. There are three types of error:</p>
+
+    <h3>Syntax Error</h3>
+    <p>The error which may arise due to not following proper rules or format given by the programming language. Every programming language have their own vocabulary, punctuation and structure. Programmers need to follow every detail while programming. This type of error can be detected by language processor such as compilers and interpreter. For e.g. In C, every statement should end with semi-colon at the end of the statement then the errors encounter is syntax error.</p>
+
+    <h3>Logical Error</h3>
+    <p>Logic refers to idea or concept used to solve a specific problem. If the problem is poorly understood than it may hamper while solving the problem. The error that is encountered due to poorly developed logic is called logical error. This type of error is not detected by language processor. For example: In order to calculate simple interest, we use the formula I =(P*T*R)/100, if we write above mentioned formula, as I=P*T*R, then the error encounter is logical error.</p>
+
+    <h3>Runtime Error</h3>
+    <p>When a program is running or executing, it is said to be runtime. Hence, the error that are encounters/found while program is being executed is known as runtime error. It is also not detected by language translator. For example: if insufficient memory space, peripheral device not turning on.</p>
+
+    <h2>Some Common Terminology in Programming</h2>
+
+    <h3>Data Types</h3>
+    <p>It specifies the type of data to be used in a program. Some common types of data types are:</p>
+    <ul>
+        <li>Numeric: It is the combination of all the positive and negative whole number including zero.</li>
+        <li>Character: it is the possible combination of all the alphanumeric values including especial symbol.</li>
+    </ul>
+
+    <h3>Variable and Constant</h3>
+    <ul>
+        <li>Variable: Those entities which holds either numeric or alphanumeric values and changes its value throughout the time of program execution.</li>
+        <li>Constant: Those entities which holds either numeric or alphanumeric values but does not change its value throughout the time of program execution.</li>
+    </ul>
+
+    <h3>Operands and Operators and Operations</h3>
+    <p>Let us consider as:</p>
+    <p>S=A+B</p>
+    <p>Where S, A, B are operands</p>
+    <p>+, = are operands</p>
+    <p>S=A+B denotes sum of two operands A, B which is Operation</p>
+
+    <h3>Types of Operators</h3>
+    <p>It is a special symbol which helps to make operation successful i.e. it helps to make some specific operation.</p>
+    <p>Commonly used operators are:</p>
+    <ul>
+        <li>Arithmetic operators: +, -, /, *</li>
+        <li>Relative operators: <, >, >=, <=, =</li>
+        <li>Logical operators: AND, OR, NOT</li>
+    </ul>
+
+    <h2>Program Design Tool</h2>
+    <p>There are several program designs tools that are available. Some of the commonly used program design tool are algorithm, flowchart, pseudocode.</p>
+
+    <h3>Algorithm</h3>
+    <p>The step by step procedure or sequential steps for solving a specific problem is known as algorithm. Algorithm are written in simple English language and are not even close to any programming language.</p>
+
+    <h4>Rules for Writing Algorithm</h4>
+    <ul>
+        <li>Algorithm should execute output after a finite step.</li>
+        <li>Algorithm should not depend upon any programming language.</li>
+        <li>Algorithm should terminate after finite steps.</li>
+    </ul>
+    <h2>Loop</h2>
+    <p>Loops in programming are used to repeat a block of code until the specified condition is met. A loop statement allows programmers to execute a statement or group of statements multiple times without repetition of code. Repetitive tasks are common in programming, and loops are essential to save time and minimize errors. In C programming, the keywords while, do–while and for are provided to implement loops. Looping constructs are an important part of any processing logic, as they help in performing the same process again and again. A C programmer should be well acquainted with implementing and controlling the looping construct.</p>
+    <p>Programming languages provide various control structures that allow for more complicated execution paths. A loop statement allows us to execute a statement or group of statements multiple times.</p>
+
+    <h2>Types of Loop</h2>
+    
+    <h3>1. For loop</h3>
+    <p>For loop in C programming is a repetition control structure that allows programmers to write a loop that will be executed a specific number of times. for loop enables programmers to perform n number of steps together in a single line.</p>
+    <p><strong>Syntax:</strong></p>
+    <pre><code>for (initialize expression; condition; increment or decrement)
+{
+    statements
+}</code></pre>
+    
+    <p><strong>Example Program:</strong></p>
+    <pre><code>#include&lt;stdio.h&gt;
+int main()
+{
+    int i;
+    for (i=1;i&lt;=10;i++)
+    {
+        printf("%d\t",i);
+    }
+    printf("\nThe program is executed by NAYAN KUMAR GAUATM");
+    return 0;    
+}</code></pre>
+    
+    <p><strong>Output:</strong></p>
+    <div class="output">
+        1 2 3 4 5 6 7 8 9 10<br>
+        The program is executed by NAYAN KUMAR GAUATM
+    </div>
+
+    <h3>2. Nested For loop</h3>
+    <p>Nested for loop refers to any type of loop that is defined inside a 'for' loop.</p>
+    <p><strong>Syntax:</strong></p>
+    <pre><code>for (initialization; condition; increment or decrement)
+{
+   for (initialization; condition increment or decrement)
+      // statement of inside loop
+   }
+   // statement of outer loop
+}</code></pre>
+    
+    <p><strong>Example Program:</strong></p>
+    <pre><code>#include&lt;stdio.h&gt;
+int main()
+{
+    int i,j;
+    for (i=1;i&lt;=5;i++)
+    {
+        for(j=1;j&lt;=i;j++)
+        {
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+    printf("The program is executed by NAYAN KUMAR GAUATM");
+    return 0;
+}</code></pre>
+
+
+    <h3>3. While loop</h3>
+    <p>While loop does not depend upon the number of iterations. In for loop the number of iterations was previously known to us but in the While loop, the execution is terminated on the basis of the test condition. If the test condition will become false then it will break from the while loop else body will be executed.</p>
+    <p><strong>Syntax:</strong></p>
+    <pre><code>initialization;
+while (condition)
+{
+    Statement
+    increment or decrement;
+}</code></pre>
+    
+    <p><strong>Example Program:</strong></p>
+    <pre><code>#include&lt;stdio.h&gt;
+int main()
+{
+    int i=2;
+    while(i&lt;=20)    {
+        printf("%d\n",i);
+        i=i+2;    }
+    printf("\nThe program is executed by NAYAN KUMAR GAUATM");
+    return 0;
+}</code></pre>
+  
+    <h3>4. Nested While loop</h3>
+    <p>A nested while loop refers to any type of loop that is defined inside a 'while' loop.</p>
+    <p><strong>Syntax:</strong></p>
+    <pre><code>while(condition) {
+
+   while(condition) {
+      
+      // statement of inside loop
+   }
+
+   // statement of outer loop
+}</code></pre>
+    
+    <p><strong>Example Program:</strong></p>
+    <pre><code>#include &lt;stdio.h&gt;
+int main() 
+{
+   int i = 2;
+   int j;
+
+   do {
+      j = 1;
+      do {
+         printf("%d * %d = %d\n", i, j, i*j);
+         j++;
+      } while(j &lt;=10);
+      i++;
+   } while(i &lt;= 3);
+   printf("\nThe program is executed by NAYAN KUMAR GAUATAM");
+   return 0;
+}</code></pre>
+    
+
+
+    <h3>5. Do while loop</h3>
+    <p>The do-while loop is similar to a while loop but the only difference lies in the do-while loop test condition which is tested at the end of the body. In the do-while loop, the loop body will execute at least once irrespective of the test condition.</p>
+    <p><strong>Syntax:</strong></p>
+    <pre><code>initialization_expression;
+do
+{
+    Statement
+    
+    
+    condition;
+
+} while (condition);</code></pre>
+    
+    <p><strong>Example Program:</strong></p>
+    <pre><code>#include&lt;stdio.h&gt;
+int main()
+{
+    int i=1;
+    do
+    {
+        printf("%d\n",i);
+        i=i+2;
+    }while(i&lt;=20);        
+    printf("The program is executred by NAYAN KUMAR GAUATM");
+    return 0;
+}</code></pre>
+   
+    <h3>6. Nested Do while loop</h3>
+    <p>A nested do-while loop refers to any type of loop that is defined inside a do-while loop.</p>
+    <p><strong>Syntax:</strong></p>
+    <pre><code>do{
+   do{
+      // statement of inside loop
+   }while(condition);
+   // statement of outer loop
+}while(condition);</code></pre>
+    
+    <p><strong>Example Program:</strong></p>
+    <pre><code>#include &lt;stdio.h&gt;
+int main ()
+{
+    int i = 1, j = 1;
+    while (i &lt;= 5)
+    {
+       j = 1;
+       while (j &lt;= 5)
+    {
+       printf ("%d ", j);
+       j++;
+    }
+       printf ("\n");
+       i++;
+    }
+    printf("\nThe program is executed by NAYAN KUMAR GAUATAM");
+    return 0;
+}</code></pre>
+    
+
+
+    <h2>Arrays in C</h2>
+    
+    <p>Arrays in C are a kind of data structure that can store a fixed-size sequential collection of elements of the same data type. They can store different types of data such as int, char, double, float, etc. It also has the capability to store the collection of derived data types, such as pointers, structure, etc. Instead of declaring separate variables for each element, arrays provide a structured way to handle data collection, making programs more efficient and easier to read. They are beneficial for tasks like managing lists, performing mathematical operations on datasets, and handling data sequences in loops.</p>
+    
+    <p>The size of the array is also called the length of the array. It must be specified in the declaration itself. Once declared, the size of a C array cannot be changed. When an array is declared, the compiler allocates a continuous block of memory required to store the declared number of elements.</p>
+    
+    <h2>Array declaration (1D)</h2>
+    
+    <h2>Array declaration (1D)</h2>
+    <p>One-dimensional array is the simplest form of an array, storing elements in a single linear sequence. It can be visualized as a row of elements.</p>
+    <p><strong>Syntax:</strong></p>
+    <pre><code>data_type array_name[size];</code></pre>
+    <p><strong>Example:</strong></p>
+    <pre><code>int array[20]; // Declares an array of size 20</code></pre>
+    
+    <h2>Array declaration (2D)</h2>
+    <p>A 2D array organizes data in rows and columns, making it ideal for matrix representation.</p>
+    <p><strong>Declaration</strong></p>
+    <pre><code>data_type array_name[rows][columns];</code></pre>
+    <p><strong>Example</strong></p>
+    <pre><code>int array [5][9]; // Declares a 2D array with 5 rows and 9 columns</code></pre>
+    
+    <h2>Array initialization (1D)</h2>
+    <p><strong>Initialization</strong></p>
+    <pre><code>int array[7] = {1, 2, 3, 4, 5, 6, 7};</code></pre>
+    
+    <h2>Array initialization (2D)</h2>
+    <p><strong>Initialization</strong></p>
+    <pre><code>int array[2][3] = 
+{
+    {1, 2, 3},
+    {4, 5, 6}
+};</code></pre>
+
+    <h2>Character array</h2>
+    <p>A character array in C is a way to store a group of characters, like letters and symbols. A character array is like a row of boxes where each box can hold one character. Character arrays are an important concept in the C programming language. They allow you to store & manipulate sequences of characters, which are fundamental in many programming tasks. The first box is number 0, the second box is number 1, and so on. To show that the end of the string has been reached, we use a special character called the null terminator (\0).</p>
+    
+    <h3>Initialization of character array</h3>
+    <p>You can initialize a one-dimensional character array by specifying:</p>
+    <ul>
+        <li>A brace-enclosed comma-separated list of constants, each of which can be contained in a character</li>
+        <li>A string constant (braces surrounding the constant are optional)</li>
+    </ul>
+    <p>Initializing a string constant places the null character (\0) at the end of the string if there is room or if the array dimensions are not specified.</p>
+    <p>The following definitions show character array initializations:</p>
+    <pre><code>char array[] = { 'J', 'a', 'n' };
+char array[] = { "Jan" };
+char array[] = "Jan";</code></pre>
+    
+    <h3>Declaration of character array</h3>
+    <p>To declare a character array, you specify the type char, followed by the array name and its size in square brackets. Here's the syntax:</p>
+    <pre><code>char arrayName[size];</code></pre>
+    <p><strong>Example:</strong></p>
+    <pre><code>char array[10]; // This declares an array that can hold 10 characters</code></pre>
+
+
+</main>
+</body>
+</html>

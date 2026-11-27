@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anime Updates With Senpai</title>
+  <style>
+    body {
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url('bg.webp');
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #f4f4f4;
+  margin: 0; /* Ensures no unwanted space around the body */
+  padding-top: 60px; /* Prevents content from being hidden behind navbar */
+  display: flex;
+  flex-direction: column; /* Ensures navbar stays above content */
+  min-height: 100vh;
+}
+
+    
+  .top-nav {
+      background: rgba(26, 26, 26, 0.9);
+      padding: 15px 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      border-bottom: 1px solid #ff4444;
+      width: 100%;
+    }
+    
+    .top-nav .container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .top-nav a {
+      color: #e0e0e0;
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 8px 15px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+    
+    .top-nav a:hover {
+      background-color: rgba(255, 68, 68, 0.2);
+    }
+
+  
+    .blog-container {
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(26, 26, 26, 0.9);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+
+    header, .section, .footer {
+      background-color: rgba(40, 40, 40, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    header h1, .section h2 {
+      font-size: 2em;
+      color: #ff4444;
+      margin: 0 auto 10px;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    header p, .section p {
+      color: white;
+      text-align: justify;
+    }
+
+  </style>
+  <div id="navbar-placeholder"></div>
+
+<script>
+    fetch('top.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+</script>
+</head>
+<body>
+
+  <div class="blog-container">
+    <header>
+      <h1>2025 Anime Updates: What to Watch This Year</h1>
+      <p>Stay updated on the latest anime releases and trends for 2025</p>
+    </header>
+
+    <div class="grid">
+      <div class="section">
+        <h2>Sakamoto Days</h2>
+        <p>In January 2025, Sakamoto Days is set to captivate audiences with its unique blend of action, humor, and heartwarming moments. Adapted from Yuto Suzuki's hit manga, this anime follows Taro Sakamoto, a former assassin turned grocer, as he navigates his peaceful life while dealing with remnants of his violent past.</p>
+        <img src="sk.jpg" style="width:100%; height: 100%; object-fit: cover; border-radius: 10px; margin: 10px auto;">
+      </div>
+
+      <div class="section">
+        <h2>Fire Force Season 3</h2>
+        <p>Slated for April 2025, Fire Force Season 3 is highly anticipated by fans. This season dives into the Great Cataclysm arc, exploring the origins of the Infernals and Shinra Kusakabe's mysterious past. With David Production at the helm, expect intense battles and significant character development.</p>
+        <img src="ff.webp" style="width:100%; max-height: 100%; object-fit: cover; border-radius: 10px; margin: 10px auto;">
+      </div>
+
+      <div class="section">
+        <h2>Solo Leveling Season 2</h2>
+        <p>Airing in January 2025, Solo Leveling Season 2 continues the story of Jin-Woo Sung, a Hunter who gains the power to level up. This season promises to up the ante with improved animation, story reveals, and character interactions.</p>
+        <img src="sl.avif" style="width:100%; height: 100%; object-fit: cover; border-radius: 10px; margin: 10px auto;">
+      </div>
+
+        </div>
+  </div>
+
+
+</body>
+</html>

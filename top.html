@@ -1,0 +1,72 @@
+<!-- Top Navigation -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<div class="top-nav">
+    <div class="container">
+        <a href="Homepage.html"><i class="fas fa-home"></i> Home</a>
+        <a href="C.html"><i class="fas fa-code"></i> C Codes</a>
+        <a href="CV.html"><i class="fas fa-file-alt"></i> CV</a>
+        <a href="News.html"><i class="fas fa-newspaper"></i> News Portal</a>
+        <a href="Blog.html"><i class="fas fa-blog"></i> Blog</a>
+    </div>
+</div>
+
+
+<style>
+    /* Navigation Bar Styling */
+    .top-nav {
+        background: rgba(26, 26, 26, 0.9);
+        padding: 8px 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid #ff4444;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    .top-nav .container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    
+    .top-nav a {
+        color: #e0e0e0;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 6px 12px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+    }
+    
+    .top-nav a i {
+        margin-right: 8px;
+        color: #ff4444;
+    }
+    
+    .top-nav a:hover {
+        background-color: rgba(255, 68, 68, 0.2);
+        transform: translateY(-2px);
+        color: #fff;
+    }
+
+    @media (max-width: 768px) {
+        .top-nav .container {
+            gap: 15px;
+            padding: 0 10px;
+        }
+        .top-nav a {
+            font-size: 1em;
+            padding: 6px 10px;
+        }
+    }
+               .container {
+                padding: 15px;
+            }
+
+</style>

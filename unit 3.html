@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit 3: Software and Operating Systems</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+          <div id="navbar-placeholder"></div>
+
+<script>
+    fetch('top.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+</script>
+    <header>
+        <h1>Chapter 3:Software and Operating Systems</h1>
+    </header>
+
+    <main>
+        <section id="software-concept">
+            <h2>3.1 Concept of Software</h2>
+            <h3>3.1.1 Definition of Software</h3>
+            <p>Software is the non-tangible component of a computer system, consisting of instructions and data that tell the hardware what to do. It's written in programming languages and translated into machine code. Software enables computers to perform a wide array of tasks, from simple calculations to complex operations.</p>
+
+            <h3>3.1.2 Categories of Software</h3>
+            <ul>
+                <li><b>System Software:</b> Manages hardware and provides a platform for other software. Examples include operating systems (Windows, macOS, Linux), device drivers, and system utilities. System software is crucial for resource allocation and security.</li>
+                <li><b>Utility Software:</b> Performs maintenance and optimization tasks. Examples include antivirus software, disk defragmenters, file compression tools, and backup utilities. Utility software enhances performance and prevents data loss.</li>
+                <li><b>Application Software:</b> Helps users perform specific tasks. Examples include word processors (Microsoft Word), web browsers (Chrome, Firefox), graphic design software (Photoshop), and games. Application software enhances productivity, creativity, and entertainment.</li>
+                <li><b>Web-Based Software:</b> Runs on web servers and is accessed via browsers. Examples include Gmail, Google Docs, and online banking platforms. Cloud computing and SaaS (Software as a Service) are prominent examples of web-based software.</li>
+                <li><b>Mobile Apps:</b> Designed specifically for smartphones and tablets. Examples include WhatsApp, Instagram, and mobile banking apps. Mobile apps often interact with device hardware like GPS and cameras.</li>
+            </ul>
+        </section>
+
+        <section id="operating-system-concept">
+            <h2>3.2 Concept of Operating System</h2>
+
+            <h3>3.2.1 Introduction to Operating System</h3>
+            <p>An operating system (OS) is essential system software that manages computer hardware, software resources, and provides services for applications. The kernel is the core of the OS, handling fundamental operations.</p>
+
+            <h3>3.2.2 Role of Operating System</h3>
+            <ul>
+                <li>Manages hardware resources like CPU, memory, and I/O devices, preventing programs from interfering with each other.</li>
+                <li>Provides a user interface (GUI or CLI) to interact with the computer.</li>
+                <li>Facilitates multitasking by running multiple applications simultaneously.</li>
+            </ul>
+
+            <h3>3.2.3 Functions of an Operating System</h3>
+            <ul>
+                <li><b>Process Management:</b> Creating, scheduling, and terminating processes. Process scheduling algorithms determine CPU time allocation.</li>
+                <li><b>Memory Management:</b> Allocating and deallocating memory to processes, and managing virtual memory, which allows programs to use more memory than physically available.</li>
+                <li><b>I/O Management:</b> Handling input/output operations with device drivers.</li>
+                <li><b>File Management:</b> Organizing and managing files and directories with file systems.</li>
+            </ul>
+
+            <h3>3.2.4 OS Terminology</h3>
+            <ul>
+                <li><b>Multiprogramming:</b> Running multiple programs concurrently to increase CPU utilization.</li>
+                <li><b>Multitasking:</b> Switching between tasks rapidly to give the illusion of parallel execution.</li>
+                <li><b>Multiprocessing:</b> Using multiple CPUs to execute tasks in parallel for improved performance.</li>
+                <li><b>Distributed Systems:</b> Multiple computers working together as a single system, offering fault tolerance and scalability.</li>
+            </ul>
+        </section>
+
+        <section id="windows-os">
+            <h2>3.3 Windows Operating System</h2>
+
+            <h3>3.3.1 Introduction to GUI-Based OS</h3>
+            <p>Windows is a widely used GUI-based OS known for its user-friendly interface, making computers accessible to a broader audience.</p>
+
+            <h3>Main Features:</h3>
+            <ul>
+                <li>User-friendly interface with drag-and-drop functionality.</li>
+                <li>Easier file management using File Explorer.</li>
+                <li>Simplified customization options for desktop and start menu.</li>
+            </ul>
+
+            <h4>Working in Desktop Applications</h4>
+            <p>This includes managing files, folders, and using applications within the Windows environment. Key aspects include:</p>
+
+            <ul>
+                <li><b>Manage Files/Folders:</b> Use File Explorer for organizing files (creating, deleting, renaming).</li>
+                <li><b>Customize Desktop:</b> Change themes, wallpapers, screen savers, and taskbar settings.</li>
+                <li><b>Add/Remove Devices:</b> Install or uninstall hardware drivers and configure devices.</li>
+                <li><b>Password Management:</b> Secure accounts with passwords and privacy settings, and manage user accounts.</li>
+                <li><b>Control Panel Tools:</b> Manage system settings like time, network, and user accounts.</li>
+                <li>Windows Registry and Windows Services are also important concepts.</li>
+            </ul>
+        </section>
+
+        <section id="open-source-mobile-os">
+            <h2>3.4 Open Source & Mobile OS</h2>
+
+            <h3>Concept of Open Source OS</h3>
+            <p>An open-source OS allows users to view, modify, and distribute its source code, fostering collaboration and innovation.</p>
+
+            <h4>Introduction to Linux & UNIX</h4>
+            <p><b>Linux:</b> A free and open-source OS known for its stability and security, widely used in servers and embedded systems.<br />
+                <b>UNIX:</b> A powerful multiuser OS used in enterprise systems and servers.</p>
+
+            <h4>Concept of Mobile OS</h4>
+            <p>A mobile OS powers smartphones and tablets, optimizing performance and battery life, and managing touch screen input and cellular network connectivity.</p>
+
+            <ul>
+                <li><b>Android:</b> Open-source mobile OS by Google, known for flexibility and customization.</li>
+                <li><b>iOS:</b> Proprietary mobile OS by Apple, known for user-friendliness and security.</li>
+                <li><b>KaiOS:</b> Lightweight OS for feature phones, providing internet access and basic apps.</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
