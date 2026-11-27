@@ -1,19 +1,19 @@
-<!-- ANIMATED CRIMSON & PITCH-BLACK HEADER -->
+<!-- CRIMSON & PITCH-BLACK WAVE HEADER -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&color=0:0a0a0a,55:7f1d1d,100:dc2626&height=205&section=header&text=NAYAN%20KUMAR%20GAUTAM&fontSize=40&fontColor=ffffff&fontAlignY=42&desc=%3C%2F%3E%20IOE%20BCT%20%C2%B7%20BUILDER%20%C2%B7%20CREATOR%20%7B%7D&descAlignY=67&descSize=15&animation=fadeIn" width="100%" alt="Nayan Kumar Gautam" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,55:7f1d1d,100:dc2626&height=215&section=header&text=NAYAN%20KUMAR%20GAUTAM&fontSize=42&fontColor=ffffff&fontAlignY=37&desc=IOE%20BCT%20%C2%B7%20BUILDER%20%C2%B7%20CREATOR&descAlignY=58&descSize=16&animation=fadeIn" width="100%" alt="Nayan Kumar Gautam" />
 </p>
 
-<!-- BRUSH-SCRIPT MOTTO + CYBER-TECH TYPING ANIMATION -->
+<!-- BRUSH-SCRIPT MOTTO + LIGHT/DARK-SAFE TECH TYPING BAR -->
 <p align="center">
   <a href="https://github.com/nayansensei">
-    <img src="https://readme-typing-svg.demolab.com?font=Permanent+Marker&size=25&duration=2200&pause=3500&color=FF2A2A&center=true&vCenter=true&width=520&height=42&lines=%E2%98%85+Creating+Greatness.+%E2%98%85" alt="Creating Greatness." />
+    <img src="https://readme-typing-svg.demolab.com?font=Permanent+Marker&size=26&duration=2200&pause=4500&color=DC2626&center=true&vCenter=true&width=520&height=42&lines=%E2%98%85+Creating+Greatness.+%E2%98%85" alt="Creating Greatness." />
   </a><br>
   <a href="https://github.com/nayansensei">
-    <img src="https://readme-typing-svg.demolab.com?font=Chakra+Petch&weight=700&size=19&duration=2500&pause=900&color=F5F5F5&center=true&vCenter=true&width=580&height=36&lines=%3C%2F%3E+Computer+Engineering+%28BCT%29+%C2%B7+Kathmandu%2C+Nepal;%7B+Building+Sensei+BCT+System+%7D;%3C%2F%3E+C+Programming+%26+Core+CS+Fundamentals;%7B+Anime+%26+Gaming+Video+Creator+%40senpaichacha+%7D" alt="Roles Typing Animation" />
+    <img src="https://readme-typing-svg.demolab.com?font=Chakra+Petch&weight=700&size=19&duration=2400&pause=900&color=71717A&center=true&vCenter=true&width=580&height=34&lines=%3C%2F%3E+Computer+Engineering+%28BCT%29+%C2%B7+Kathmandu%2C+Nepal;%7B+Building+Sensei+BCT+System+%7D;%3C%2F%3E+C+Programming+%26+Core+CS+Fundamentals;%7B+Anime+%26+Gaming+Video+Creator+%40senpaichacha+%7D" alt="Roles Typing Animation" />
   </a>
 </p>
 
-<!-- COMPACT SOCIAL & VIEW BADGES -->
+<!-- SOCIAL & PROFILE VIEW BADGES -->
 <p align="center">
   <a href="https://www.linkedin.com/in/nayan-kumar-gautam/">
     <img src="https://img.shields.io/badge/LINKEDIN-CONNECT-dc2626?style=for-the-badge&labelColor=0a0a0a" alt="LinkedIn" />
@@ -27,59 +27,37 @@
   <img src="https://komarev.com/ghpvc/?username=nayansensei&label=VIEWS&color=dc2626&style=for-the-badge" alt="Profile Views" />
 </p>
 
-<p align="center">
-  <kbd>&nbsp;&lt;/&gt;&nbsp;</kbd> &nbsp;✦&nbsp; <kbd>&nbsp;★ 𝘾𝙍𝙀𝘼𝙏𝙄𝙉𝙂 𝙂𝙍𝙀𝘼𝙏𝙉𝙀𝙎𝙎. ★&nbsp;</kbd> &nbsp;✦&nbsp; <kbd>&nbsp;{ }&nbsp;</kbd>
-</p>
-
-<br>
+---
 
 ## `</>` 𝘼𝘽𝙊𝙐𝙏 𝙈𝙀
 
-<table>
-  <tr>
-    <td width="58%" valign="top">
-      <p>I'm a first-year <b>Computer Engineering (BCT)</b> student at <b>Sagarmatha Engineering College, Tribhuvan University</b>, based in Kathmandu, Nepal.</p>
-      <p>I learn by <b>building, not staying stuck in tutorial hell</b>. Right now I'm building the <b>Sensei BCT System</b> while locking down strong fundamentals in <b>C programming</b>, how computers actually work under the hood, and writing code every single week.</p>
-      <p>Outside engineering, I edit <b>anime and gaming videos</b> for an international audience — which taught me the other half of building things: <b>packaging, storytelling, and making people actually care about what you made.</b></p>
-      <blockquote><b><i>Creating Greatness.</i></b> — that's the standard I work by.</blockquote>
-    </td>
-    <td width="42%" valign="top">
-      <p align="center"><kbd>&nbsp;★ 𝘼𝙏 𝘼 𝙂𝙇𝘼𝙉𝘾𝙀 ★&nbsp;</kbd></p>
-      <table>
-        <tr><td><b>Location</b></td><td>Kathmandu, Nepal</td></tr>
-        <tr><td><b>Education</b></td><td>B.E. BCT (Year 1) — TU</td></tr>
-        <tr><td><b>Building</b></td><td>Sensei BCT System</td></tr>
-        <tr><td><b>Focus</b></td><td>C &amp; Core CS Fundamentals</td></tr>
-        <tr><td><b>Creative</b></td><td>Anime &amp; Gaming Video Editor</td></tr>
-        <tr><td><b>Languages</b></td><td>Nepali · English · Hindi</td></tr>
-      </table>
-    </td>
-  </tr>
-</table>
+I'm a first-year **Computer Engineering (BCT)** student at **Sagarmatha Engineering College, Tribhuvan University** in Kathmandu, Nepal.
+
+I learn by **shipping, not staying stuck in tutorial hell**. Right now I'm building the **Sensei BCT System** while locking down strong fundamentals in **C programming**, how computers work under the hood, and writing code every week. Outside engineering, I edit **anime and gaming videos** for an international audience — which taught me the other half of building things: **packaging, storytelling, and making people actually care about what you made.**
+
+| 📍 Location | 🎓 Education | ⚡ Current Build | 🧠 Focus | 🗣️ Languages |
+| :--- | :--- | :--- | :--- | :--- |
+| Kathmandu, Nepal | B.E. BCT (Year 1) — TU | Sensei BCT System | C & Core CS | Nepali · English · Hindi |
 
 <br>
 
-## `{ }` 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝘿 𝙋𝙍𝙊𝙅𝙀𝘾𝙏 — 𝙎𝙀𝙉𝙎𝙀𝙄 𝘽𝘾𝙏 𝙎𝙔𝙎𝙏𝙀𝙈
+## `{ }` 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝘿 𝙋𝙍𝙊𝙅𝙀𝘾𝙏
 
-<table>
-  <tr>
-    <td>
-      <h3>⚡ 𝙎𝙚𝙣𝙨𝙚𝙞 𝘽𝘾𝙏 𝙎𝙮𝙨𝙩𝙚𝙢</h3>
-      <p><i>Built because scattered Google Drive folders and dead links waste study time.</i></p>
-      <p>A centralized study platform built for <b>IOE BCT</b> students — every subject, chapter, note, old question, and question bank in <b>one place</b>, with everything opening directly inside the app.</p>
-      <ul>
-        <li><b>Clean Course Structure:</b> <code>Home → Semester → Subject → Chapter</code> mapped to the full BCT syllabus</li>
-        <li><b>Exam-Ready Archive:</b> Notes, past papers, and question banks aligned to the real IOE pattern</li>
-        <li><b>Zero Friction:</b> Everything opens cleanly inside the app — no redirect maze, no dead links</li>
-      </ul>
-      <p>
-        <a href="https://github.com/nayansensei?tab=repositories">
-          <img src="https://img.shields.io/badge/VIEW_REPOSITORIES-dc2626?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0a" alt="View Repositories" />
-        </a>
-      </p>
-    </td>
-  </tr>
-</table>
+### ⚡ Sensei BCT System
+
+> *Built because scattered Google Drive folders and dead links waste study time.*
+
+A centralized study platform for **IOE BCT** students — every subject, chapter, note, old question, and question bank in **one place**, opening straight inside the app.
+
+* **Clean Course Structure:** `Home → Semester → Subject → Chapter` mapped to the full BCT syllabus
+* **Exam-Ready Archive:** Notes, past papers, and question banks aligned to the real IOE pattern
+* **Zero Friction:** Everything opens cleanly inside the app — no redirect maze, no dead links
+
+<p>
+  <a href="https://github.com/nayansensei?tab=repositories">
+    <img src="https://img.shields.io/badge/VIEW_REPOSITORIES-dc2626?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0a" alt="View Repositories" />
+  </a>
+</p>
 
 <br>
 
@@ -92,27 +70,19 @@
   <img src="https://img.shields.io/badge/JavaScript-0a0a0a?style=for-the-badge&logo=javascript&logoColor=ff2a2a" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Git-0a0a0a?style=for-the-badge&logo=git&logoColor=ff2a2a" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-0a0a0a?style=for-the-badge&logo=github&logoColor=ff2a2a" alt="GitHub" />
-  <img src="https://img.shields.io/badge/Codespaces-0a0a0a?style=for-the-badge&logo=github&logoColor=ff2a2a" alt="Codespaces" />
   <img src="https://img.shields.io/badge/Ubuntu-0a0a0a?style=for-the-badge&logo=ubuntu&logoColor=ff2a2a" alt="Ubuntu" />
   <img src="https://img.shields.io/badge/Brave-0a0a0a?style=for-the-badge&logo=brave&logoColor=ff2a2a" alt="Brave" />
-  <img src="https://img.shields.io/badge/Video_Editing-0a0a0a?style=for-the-badge&logo=youtube&logoColor=ff2a2a" alt="Video Editing" />
+  <img src="https://img.shields.io/badge/Codespaces-dc2626?style=for-the-badge" alt="Codespaces" />
+  <img src="https://img.shields.io/badge/Video_Editing-dc2626?style=for-the-badge" alt="Video Editing" />
 </p>
 
 <p align="center">
-  <kbd>&nbsp;🤝 𝙏𝙚𝙘𝙝 𝘾𝙤𝙢𝙢𝙪𝙣𝙞𝙩𝙞𝙚𝙨 &amp; 𝙑𝙤𝙡𝙪𝙣𝙩𝙚𝙚𝙧𝙞𝙣𝙜&nbsp;</kbd> &nbsp;
-  <kbd>&nbsp;🚀 𝙎𝙩𝙪𝙙𝙚𝙣𝙩 𝙋𝙧𝙤𝙟𝙚𝙘𝙩 𝘾𝙤𝙡𝙡𝙖𝙗𝙨&nbsp;</kbd> &nbsp;
-  <kbd>&nbsp;🎬 𝘾𝙤𝙣𝙩𝙚𝙣𝙩 𝘾𝙧𝙚𝙖𝙩𝙞𝙤𝙣&nbsp;</kbd>
+  <kbd>&nbsp;🤝 Tech Communities &amp; Volunteering&nbsp;</kbd> &nbsp;
+  <kbd>&nbsp;🚀 Student Project Collabs&nbsp;</kbd> &nbsp;
+  <kbd>&nbsp;🎬 Anime &amp; Gaming Edits&nbsp;</kbd>
 </p>
 
-<br>
-
-## `◈` 𝙂𝙄𝙏𝙃𝙐𝘽 𝙎𝙏𝙍𝙀𝘼𝙆
-
+<!-- CLEAN CRIMSON FOOTER WAVE -->
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=nayansensei&background=0a0a0a&border=dc2626&stroke=262626&ring=ff2a2a&fire=ff2a2a&currStreakNum=ffffff&sideNums=f5f5f5&currStreakLabel=ff2a2a&sideLabels=a3a3a3&dates=737373" alt="GitHub Streak" />
-</p>
-
-<!-- ANIMATED CRIMSON FOOTER -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,55:7f1d1d,100:dc2626&height=110&section=footer&text=%3C%2F%3E%20Creating%20Greatness.%20%7B%7D&fontSize=19&fontColor=ffffff&fontAlignY=72&animation=twinkling" width="100%" alt="Creating Greatness." />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,55:7f1d1d,100:dc2626&height=95&section=footer" width="100%" alt="Footer Wave" />
 </p>
