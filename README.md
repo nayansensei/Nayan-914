@@ -35,9 +35,9 @@ I'm a first-year **Computer Engineering (BCT)** student at **Sagarmatha Engineer
 
 I learn by **shipping, not staying stuck in tutorial hell**. Right now I'm building the **Sensei BCT System** while locking down strong fundamentals in **C programming**, how computers work under the hood, and writing code every week. Outside engineering, I edit **anime and gaming videos** for an international audience — which taught me the other half of building things: **packaging, storytelling, and making people actually care about what you made.**
 
-| 📍 Location | 🎓 Education | ⚡ Current Build | 🧠 Focus | 🗣️ Languages |
-| :--- | :--- | :--- | :--- | :--- |
-| Kathmandu, Nepal | B.E. BCT (Year 1) — TU | Sensei BCT System | C & Core CS | Nepali · English · Hindi |
+| 📍 Location | 🎓 Education | 🧠 Focus | 🗣️ Languages |
+| :--- | :--- | :--- | :--- | 
+| Kathmandu, Nepal | B.E. BCT (Year 1) — TU | C & Core CS | Nepali · English · Hindi |
 
 <br>
 
