@@ -41,25 +41,7 @@ I learn by **shipping, not staying stuck in tutorial hell**. Right now I'm build
 
 <br>
 
-## `{ }` 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝘿 𝙋𝙍𝙊𝙅𝙀𝘾𝙏
 
-### ⚡ Sensei BCT System
-
-> *Built because scattered Google Drive folders and dead links waste study time.*
-
-A centralized study platform for **IOE BCT** students — every subject, chapter, note, old question, and question bank in **one place**, opening straight inside the app.
-
-* **Clean Course Structure:** `Home → Semester → Subject → Chapter` mapped to the full BCT syllabus
-* **Exam-Ready Archive:** Notes, past papers, and question banks aligned to the real IOE pattern
-* **Zero Friction:** Everything opens cleanly inside the app — no redirect maze, no dead links
-
-<p>
-  <a href="https://github.com/nayansensei?tab=repositories">
-    <img src="https://img.shields.io/badge/VIEW_REPOSITORIES-dc2626?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0a" alt="View Repositories" />
-  </a>
-</p>
-
-<br>
 
 ## `★` 𝙏𝙀𝘾𝙃 𝙎𝙏𝘼𝘾𝙆 & 𝙄𝙉𝙏𝙀𝙍𝙀𝙎𝙏𝙎
 
