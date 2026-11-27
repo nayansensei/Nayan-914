@@ -1,41 +1,54 @@
-<!-- ANIMATED HEADER BANNER -->
+<!-- CUSTOM GRUNGE BANNER (Upload your LinkedIn banner as assets/banner.png in your repo) -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:8957e5&height=210&section=header&text=Nayan%20Kumar%20Gautam&fontSize=46&fontColor=ffffff&fontAlignY=38&desc=IOE%20BCT%20Student%20%C2%B7%20Builder%20%C2%B7%20Video%20Creator&descAlignY=62&descSize=17&animation=fadeIn" width="100%" alt="Nayan Kumar Gautam Header" />
+  <img src="./assets/banner.png" width="100%" alt="Nayan Kumar Gautam — Creating Greatness." />
 </p>
 
-<!-- ANIMATED TYPING SUBTITLE -->
+<!-- ANIMATED CRIMSON TYPING TERMINAL -->
 <p align="center">
   <a href="https://github.com/nayansensei">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=680&lines=Creating+Greatness.;Building+Sensei+BCT+System+for+IOE+Students;Focused+on+C+%26+Real+CS+Fundamentals;Anime+%26+Gaming+Video+Creator+%7C+Kathmandu%2C+Nepal" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2600&pause=850&color=FF2A2A&center=true&vCenter=true&width=700&lines=%3C%2F+Creating+Greatness.+%2F%3E;IOE+BCT+Undergrad+%7C+Building+Sensei+BCT+System;Grinding+C+%26+How+Computers+Actually+Work;Anime+%26+Gaming+Video+Creator+(%40senpaichacha)" alt="Typing Animation" />
   </a>
 </p>
 
-<!-- SOCIALS & LIVE PROFILE COUNTER -->
+<!-- CRIMSON & PITCH-BLACK SOCIALS + LIVE VIEW COUNTER -->
 <p align="center">
   <a href="https://www.linkedin.com/in/nayan-kumar-gautam/">
-    <img src="https://img.shields.io/badge/LinkedIn-Nayan_Kumar_Gautam-0A66C2?style=for-the-badge" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LINKEDIN-NAYAN_KUMAR_GAUTAM-dc2626?style=for-the-badge&labelColor=0a0a0a" alt="LinkedIn" />
   </a>
   <a href="https://www.tiktok.com/@senpaichacha">
-    <img src="https://img.shields.io/badge/TikTok-@senpaichacha-0d1117?style=for-the-badge&logo=tiktok&logoColor=ff0050" alt="TikTok" />
+    <img src="https://img.shields.io/badge/TIKTOK-%40SENPAICHACHA-0a0a0a?style=for-the-badge&logo=tiktok&logoColor=ff2a2a&labelColor=dc2626" alt="TikTok" />
   </a>
   <a href="mailto:nepuni007@gmail.com">
-    <img src="https://img.shields.io/badge/Email-nepuni007@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email" />
+    <img src="https://img.shields.io/badge/EMAIL-NEPUNI007%40GMAIL.COM-dc2626?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=0a0a0a" alt="Email" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=nayansensei&label=Profile+Views&color=8957e5&style=for-the-badge" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=nayansensei&label=VIEWS&color=dc2626&style=for-the-badge" alt="Profile Views" />
 </p>
 
 <br>
 
-## `whoami`
+## `[ 01 // WHOAMI ]`
 
-```js
-const nayan = {
-  location: "Kathmandu, Nepal 🇳🇵",
-  education: "B.E. in Computer Engineering (BCT) — Sagarmatha Engineering College, TU (Year 1)",
-  building: "Sensei BCT System",
-  engineeringFocus: ["C Programming", "How Computers Actually Work", "Shipping Code Weekly"],
-  creativeSide: "Anime & Gaming Video Creator for an International Audience",
-  languagesSpoken: ["Nepali", "English", "Hindi"],
-  openTo: ["Tech Communities", "Student Events", "Volunteering", "Student Project Collabs"],
-  standard: "Creating Greatness."
+```c
+#include <stdio.h>
+
+typedef struct {
+    char *name;
+    char *base;
+    char *degree;
+    char *flagship_build;
+    char *focus[3];
+    char *creative_side;
+    char *languages[3];
+    char *motto;
+} Developer;
+
+Developer nayan = {
+    .name           = "Nayan Kumar Gautam",
+    .base           = "Kathmandu, Nepal",
+    .degree         = "B.E. Computer Engineering (BCT) — Sagarmatha Engineering College, TU",
+    .flagship_build = "Sensei BCT System",
+    .focus          = {"C Programming", "Low-Level Fundamentals", "Shipping Every Week"},
+    .creative_side  = "Anime & Gaming Video Editor for an International Audience",
+    .languages      = {"Nepali", "English", "Hindi"},
+    .motto          = "Creating Greatness."
 };
